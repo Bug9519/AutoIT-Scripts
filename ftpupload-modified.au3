@@ -14,7 +14,7 @@
 ; Script Start - Add your code below here
 #include <FTPEx.au3>
 
-Local $server = "FTP Server goes here (drivehq.ftp.com)"
+Local $server = "FTP Server goes here (ftp.drivehq.com)"
 Local $username = "Your username goes here."
 Local $pass = "Your password goes here."
 Local $hOpen = _FTP_Open("MyFTP Control")
