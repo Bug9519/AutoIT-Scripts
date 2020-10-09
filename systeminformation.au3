@@ -7,7 +7,7 @@
 	Gather as much system information as possible, and save it to a file.
 	Now this script also uploads the systeminfo.txt file to a FTP Server of your choice!
 
-	For diagnostic purposes.
+	For diagnostic purposes...
 
 	TODO:
 	     -Implement code to upload file to specified FTP Server. - Implemented: 8/10/2020 (8th of October, 2020).
