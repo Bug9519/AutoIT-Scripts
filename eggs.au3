@@ -5,6 +5,8 @@
 
  Script Function:
 	To type :egg: into a specific Discord text channel, for no reason whatsoever.
+	This results in the egg emoji being posted into the specified Discord text channel.
+	It's just for fun...
 
 	Coded: 20/01/2021
 
